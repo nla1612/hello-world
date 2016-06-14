@@ -1,0 +1,69 @@
+// Base Styles
+
+body
+  font-family: "Open Sans", sans-serif
+
+h1
+  color: #ccc
+  weight: 300
+
+figure
+  margin: auto
+
+.content
+  article
+    padding: 100px 0
+    max-width: 640px
+    margin: 0 auto
+    text-align: center
+
+img
+  max-width: 100%
+
+//navbar
+.navbar ul
+  list-style: none
+  margin: 0
+  padding: 0
+  background-color: #3E92CC
+  text-align: center
+  width: 25%
+  height: 100%
+  position: fixed
+  z-index: 0
+
+.navbar li a
+  display: block
+  text-decoration: none
+  color: #fff
+  padding: 8px 0 8px 16px
+  text-align: left
+
+.navbar li a:hover
+  color: #EFA00B
+
+//navbar media query
+@media screen and (min-width: 600px)
+  .navbar li
+    //width: 120px
+    padding: 0px 20px
+    border-bottom: none
+    height: 50px
+    line-height: 50px
+    font-size: 1.4em
+
+  .navbar li
+    display: inline-block
+    margin-right: -4px
+
+// Parallax
+.oil-rig
+  position: relative
+  height: 600px
+  background:
+    image: url(../images/Canada-Oil-Industry.jpg)
+    size: auto 600px
+    position: top center
+    attachment: fixed
+    repeat: no-repeat
+    z-index: 1
